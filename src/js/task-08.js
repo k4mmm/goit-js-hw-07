@@ -17,8 +17,9 @@ function destroyBoxes() {
 
 function createBoxes(amount) {
     let boxArr = [];
-    for (let i = 0; i <= amount; i += 1){
+    for (let i = 1; i <= amount; i += 1){
         const newDiv = document.createElement("div");
+        newDiv.textContent = i;
         newDiv.style.height = `${boxHeigth}px`;
         newDiv.style.width = `${boxWidth}px`;
         newDiv.style.margin = `${boxMargin}px`;
